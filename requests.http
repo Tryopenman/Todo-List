@@ -1,0 +1,9 @@
+# POST (registar utilizador)
+POST http://localhost:8080/users/
+Content-Type: application/json
+
+{
+  "username": "fosorio",
+  "name": "Francisco Osório",
+  "password": "test123"
+}

@@ -1,4 +1,4 @@
-# POST (registar utilizador)
+### POST (Register User)
 POST http://localhost:8080/users/
 Content-Type: application/json
 
@@ -6,4 +6,17 @@ Content-Type: application/json
   "username": "fosorio",
   "name": "Francisco Osório",
   "password": "test123"
+}
+
+### POST (Register Task)
+POST http://localhost:8080/tasks/
+Content-Type: application/json
+Authorization: Basic fosorio:test123
+
+{
+  "title": "Aplicação spring boot",
+  "description": "Desenvolver uma aplicação spring boot",
+  "priority": "ALTA",
+  "startAt": "2024-07-09T17:00:00",
+  "endAt": "2024-07-09T18:00:00"
 }

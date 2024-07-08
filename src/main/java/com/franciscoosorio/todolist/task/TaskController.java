@@ -3,9 +3,11 @@ package com.franciscoosorio.todolist.task;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,5 +41,12 @@ public class TaskController {
         var taskRegistered = this.taskRepository.save(task);
 
         return ResponseEntity.status(HttpStatus.OK).body(taskRegistered);
+    }
+
+    @GetMapping("/")
+    public List<TaskModel> listTasks(HttpServletRequest request){
+        
+        var idUser = request.getAttribute("idUser");
+        return this.taskRepository.findByIdUser((UUID) idUser);
     }
 }

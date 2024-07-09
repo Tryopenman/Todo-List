@@ -14,7 +14,7 @@ Content-Type: application/json
 Authorization: Basic fosorio:test123
 
 {
-  "title": "Aplicação spring bootDesenvolver uma aplicação spring bootDesenvolver uma aplicação spring bootDesenvolver uma aplicação spring boot",
+  "title": "Aplicação spring boot",
   "description": "Desenvolver uma aplicação spring boot",
   "priority": "ALTA",
   "startAt": "2024-07-09T17:00:00",

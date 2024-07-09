@@ -26,3 +26,11 @@ GET http://localhost:8080/tasks/
 Content-Type: application/json
 Authorization: Basic fosorio:test123
 
+### PUT (Update Task)
+PUT http://localhost:8080/tasks/3b2c7d6a-d6ca-44c6-8895-8834201ec4e6
+Content-Type: application/json
+Authorization: Basic fosorio:test123
+
+{
+  "title": "Alteracao Aplicação spring boot"
+}

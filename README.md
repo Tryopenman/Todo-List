@@ -1,21 +1,15 @@
-<h1 align="center" style="font-weight: bold;">Todo List Api 💻</h1>
+<h1 align = "center">👨‍💻Todo List Api</h1>
 
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
-
-<p align="center">
-  <b>This project is an API built using <strong>Java, Java Spring</strong>.</b>
-</p>
-<p align="center">
-  <a href="#started">Getting Started</a> • 
-  <a href="#routes">API Endpoints</a>
-</p>
-
-<p align="center">
+<p>
   <b>This is an entire list api project, developed during rockeseat's mini java course, thus taking the first steps with spring boot.</b>
 </p>
 
+<p>
+  • <a href="#started">Getting Started</a> <br>
+  • <a href="#technologies">Technologies</a> <br>
+  • <a href="#endpoints">Endpoints</a> <br>
+  • <a href="#license">License</a> <br>
+</p>
 
 <h2 id="started">🚀 Getting started</h2>
 
@@ -29,14 +23,21 @@ $ git clone https://github.com/Tryopenman/Todo-List.git
 
 3. Start the application with Maven
 
-<h2 id="routes">📍 API Endpoints</h2>
 
-| Route                          | Description                                                                       |
+<h2 id="technologies">Technologies</h2>
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+
+<h2 id="endpoints">📌Endpoints</h2>
+
+| Endpoints                          | Description                                                                       |
 |--------------------------------|-----------------------------------------------------------------------------------|
-| <kbd>POST /users</kbd>         | Register a new user, see [request details](#post-users-detail)                    |
-| <kbd>POST /tasks</kbd>         | Register a new task, see [request details](#post-tasks-detail)                    |
-| <kbd>GET /tasks</kbd>          | List all tasks, see [response details](#get-tasks-detail)                         |
-| <kbd>PUT /tasks/{taskId}</kbd> | Update an existing task, see [request details](#put-tasks-detail)                 |
+| <kbd>POST /users</kbd>         | [Register a new user](#post-users-detail)|
+| <kbd>POST /tasks</kbd>         | [Register a new task](#post-tasks-detail)                    |
+| <kbd>GET /tasks</kbd>          | [List all tasks](#get-tasks-detail)                         |
+| <kbd>PUT /tasks/{taskId}</kbd> | [Update an existing task](#put-tasks-detail)                 |
 
 <h3 id="post-users-detail">POST /users</h3>
 
@@ -122,3 +123,6 @@ $ git clone https://github.com/Tryopenman/Todo-List.git
   "createdAt": "2024-07-09T15:00:00"
 }
 ```
+<h2 id="license">📝License</h2>
+
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
